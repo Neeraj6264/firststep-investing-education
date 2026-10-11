@@ -1,33 +1,66 @@
-# Groww FirstStep
+# FirstStep
 
-A mobile-first investing education and virtual practice concept for a Groww Product Intern case study. The refreshed interface takes cues from Groww’s clean green fintech presentation and product-led navigation, while keeping its own screen layouts and visual assets. This is an independent, unofficial concept; it is not affiliated with Groww and does not use Groww’s logo or proprietary assets.
+**Learn · plan · practise** — an independent, mobile-first investing education concept for people exploring their first investing account.
+
+> FirstStep is a case-study prototype inspired by the supplied Groww-for-Gen-Z brief. It is not affiliated with Groww, does not use Groww’s logo or proprietary assets, and is not a live financial product.
+
+## Try the prototype
+
+**Live demo:** _Deployment pending._ Once the GitHub Pages workflow publishes successfully, replace this line with the generated Pages URL.
+
+The project is a static Vite app and can be hosted from this repository with the included GitHub Actions workflow.
+
+## The idea
+
+The brief asks how an investing app could better serve Indian Gen Z users aged 20–26 who may be students, part-time workers, or receiving their first paycheck. With no research or product analytics supplied, this prototype treats beginner confidence, unfamiliar terminology, and fear of making an uninformed choice as hypotheses to test.
+
+The proposed first journey connects three actions:
+
+1. **Learn:** short lessons explain investing, SIPs, stocks, diversification, compounding, and planning in plain language, with examples and risk context.
+2. **Plan:** a goal planner estimates an even monthly contribution from the amount remaining and time horizon. It assumes no investment growth.
+3. **Practise:** fictional assets and a virtual portfolio let people explore basic mechanics without placing real orders.
+
+The optional learner profile asks for a display name and broad age range, or lets people continue as a guest. This is **not authentication**: there is no identity verification, password, backend, or cross-device sync.
+
+## Case-study deliverables
+
+- [Case-study draft and assumptions](CASE_STUDY_NOTES.md) — 300–700-word working draft. The brief asks that the submitted page not be AI-created; personalize and rewrite it in your own voice before submitting. Do not present this AI-assisted draft as unaided work or claim research you did not conduct.
+- [Prompts used](PROMPTS.md)
+- [Evaluation record](EVALS.md)
 
 ## Run locally
 
-Prerequisites: Node.js 20+ and npm, plus network access to install npm packages.
+Requirements: Node.js 20+ and npm.
 
 ```sh
 npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite (normally `http://localhost:5173`). Build with `npm run build`; run automated tests with `npm test`.
+Build and check the app:
 
-## Architecture
+```sh
+npm run build
+npm test
+```
 
-- `src/App.tsx` contains typed local data models, fictional demo assets and lessons, onboarding, app navigation, feature pages, and interaction logic.
-- `src/style.css` contains responsive layouts, accessible focus styles, and reduced-motion handling.
-- `src/main.tsx` mounts the React app. Vite and TypeScript configuration live at the repository root.
-- The app uses React, TypeScript, Vite, and Lucide icons. Navigation uses familiar names such as Discover and Practice, with fictional stocks, funds and bonds grouped for learning. Demo charts are original inline SVG illustrations; no external market or brokerage services are used.
+## Project structure
 
-## Data and limitations
+- `src/App.tsx` — onboarding, lesson content, navigation, goals, fictional discovery assets, virtual portfolio, and profile.
+- `src/finance.ts` — small deterministic helpers for virtual portfolio and goal calculations.
+- `src/style.css` — responsive styles, focus treatments, and reduced-motion behavior.
+- `src/main.tsx` — React entry point.
+- `EVALS.md` — observed and automated checks, including known gaps.
+- `CASE_STUDY_NOTES.md` — editable case-study draft and declared assumptions.
 
-Onboarding offers a browser-only learner profile with a display name and optional broad age band. No exact birth date, email, password, or government identifier is collected. This is not secure authentication: it does not verify identity, protect a shared browser with a password, or sync across devices. Users can continue as a guest.
+Built with React, TypeScript, Vite, and Lucide icons. Charts are illustrative SVGs; no live market or brokerage API is connected.
 
-The `firststep.v1` localStorage key stores the optional profile answers and other onboarding progress, completed lessons, goals, watchlist, quiz score, virtual cash, holdings, and transaction history. Malformed JSON falls back to initial demo state. Data stays in this browser; clearing site storage removes it. “Clear all local learner data” removes this key.
+## Data, privacy, and limitations
 
-All sample asset names, prices, movements, and charts are fictional and static. The virtual portfolio starts with ₹1,00,000, has no real transactions, and uses fixed demo prices consistently. Profit/loss compares current fictional prices with average virtual purchase cost. Goal monthly amounts divide remaining savings by whole months to the target date, without investment growth. The illustrative chart is not historical data. There is no account, backend, live market feed, tax treatment, fee model, or personalized advice.
+The `firststep.v1` localStorage key stores optional onboarding answers, learning progress, goals, watchlist, quiz score, virtual cash, holdings, and transaction history in this browser. Nothing is sent to a server. Clearing site data removes it. The profile does not protect information on a shared device and is not secure sign-in.
 
-## Publish
+All instruments, prices, price changes, and charts are fictional and static. The practice balance begins at ₹1,00,000; transactions are simulated. Practice P/L uses fixed demo prices and virtual average cost. Goal contributions divide the remaining target by whole months and assume no growth. These examples are not forecasts, personalized advice, or recommendations. Live investing would require separate legal, privacy, security, suitability, and operational review.
 
-After a successful local build, publish the generated `dist/` folder on a static host such as Netlify, Vercel, or GitHub Pages. For Netlify/Vercel, connect the repository and use build command `npm run build` and publish directory `dist`. For GitHub Pages, configure the correct Vite `base` for the repository path before building, then publish `dist`. Complete hosting setup in your own account; this repository has not been deployed.
+## Deployment
+
+GitHub Pages deployment is configured in `.github/workflows/deploy.yml`. On pushes to `main`, GitHub Actions builds the app and publishes `dist/` to Pages. In the repository settings, enable **Pages → Build and deployment → GitHub Actions**. The workflow needs the repository’s Pages write permissions; the first run’s status and published URL appear in the Actions and Pages settings. Until that run succeeds, there is no live link to share.
