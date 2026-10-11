@@ -20,4 +20,4 @@ The supplied image asks for a Groww app suited to Indian Gen Z investors, especi
 - The concept connects learning, savings planning, and simulated investing practice.
 - Fictional fixed-price assets and a local-only profile keep the prototype educational; no live financial activity or actual authentication is implied.
 - The learner profile stores only a display name and optional broad age band, with guest/skip choices.
-- A GitHub Pages Actions workflow was added to publish the static Vite build from `main`; the live deployment URL remains pending verification.
+- A GitHub Pages Actions workflow publishes the static Vite build from `main`. The repository’s Pages source was enabled for Actions, the workflow succeeded, and the live URL is `https://neeraj6264.github.io/firststep-investing-education/`.

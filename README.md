@@ -6,7 +6,7 @@
 
 ## Try the prototype
 
-**Live demo:** _Deployment pending._ Once the GitHub Pages workflow publishes successfully, replace this line with the generated Pages URL.
+**Live demo:** [Open FirstStep](https://neeraj6264.github.io/firststep-investing-education/)
 
 The project is a static Vite app and can be hosted from this repository with the included GitHub Actions workflow.
 
@@ -63,4 +63,4 @@ All instruments, prices, price changes, and charts are fictional and static. The
 
 ## Deployment
 
-GitHub Pages deployment is configured in `.github/workflows/deploy.yml`. On pushes to `main`, GitHub Actions builds the app and publishes `dist/` to Pages. In the repository settings, enable **Pages → Build and deployment → GitHub Actions**. The workflow needs the repository’s Pages write permissions; the first run’s status and published URL appear in the Actions and Pages settings. Until that run succeeds, there is no live link to share.
+GitHub Pages deployment is configured in `.github/workflows/deploy.yml`. On pushes to `main`, GitHub Actions builds the app and publishes `dist/` to Pages. The repository Pages source is set to GitHub Actions. The live site is [neeraj6264.github.io/firststep-investing-education](https://neeraj6264.github.io/firststep-investing-education/); deployment status is visible in the repository’s [Actions](https://github.com/Neeraj6264/firststep-investing-education/actions) tab.
