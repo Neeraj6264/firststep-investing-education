@@ -1,5 +1,7 @@
 # Evaluation record
 
+The 2026-10-11 results below include checks on the Groww-inspired visual and naming refresh.
+
 Checks performed on 2026-10-11 (Asia/Kolkata). UI checks used the local Vite app in the in-app browser. Build/tests were run after installing dependencies; commands that hit Windows process-spawn restrictions succeeded via the approved elevated route.
 
 | Case | Expected behavior | Actual result | Status |
@@ -18,6 +20,7 @@ Checks performed on 2026-10-11 (Asia/Kolkata). UI checks used the local Vite app
 | Quiz scoring and retry | Explain answers and calculate five-question score accurately | Quiz implemented, but end-to-end browser quiz and retry were not exercised. | Not run |
 | Refresh persistence and malformed storage | Keep progress after refresh, safely recover malformed JSON | State is stored under `firststep.v1`; malformed JSON fallback exists. Refresh and corrupted storage were not exercised in browser. | Partial |
 | Responsive, keyboard and console QA | Usable at mobile/desktop widths, visible focus, no console errors | Desktop browser smoke test only. Mobile-width, keyboard-only, and console-log inspection were not completed. | Not run |
+| Groww-inspired refresh | Use cohesive green fintech styling and clear screen names without presenting as an official Groww app | Changed the working concept name to Groww FirstStep, updated brand and demo disclosures, and renamed Explore/Portfolio navigation to Discover/Practice. `npm run build` and `npm test` pass after the refresh. Mobile browser screenshot verified new brand and navigation layout; full desktop and keyboard review remain outstanding. | Partial |
 
 Automated test result: **1 test file passed, 6 tests passed** (`npm test`). Production build: **passed** (`npm run build`).
 

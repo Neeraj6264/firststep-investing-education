@@ -1,6 +1,6 @@
-# Case-study writing prompts
+# Groww FirstStep case-study writing prompts
 
-Use these prompts to write your own 300–700-word case-study page. Choose evidence and phrasing that reflect your own reasoning; this file is a set of questions, not a submission-ready essay.
+Use these prompts to write your own 300–700-word case-study page. Choose evidence and phrasing that reflect your own reasoning; this file is a set of questions, not a submission-ready essay. Describe the work as an independent concept inspired by Groww, not an official Groww product.
 
 ## Problem interpretation
 
