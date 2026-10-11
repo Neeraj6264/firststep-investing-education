@@ -21,6 +21,7 @@ Checks performed on 2026-10-11 (Asia/Kolkata). UI checks used the local Vite app
 | Refresh persistence and malformed storage | Keep progress after refresh, safely recover malformed JSON | State is stored under `firststep.v1`; malformed JSON fallback exists. Refresh and corrupted storage were not exercised in browser. | Partial |
 | Responsive, keyboard and console QA | Usable at mobile/desktop widths, visible focus, no console errors | Desktop browser smoke test only. Mobile-width, keyboard-only, and console-log inspection were not completed. | Not run |
 | Groww-inspired refresh | Use cohesive green fintech styling and clear screen names without presenting as an official Groww app | Changed the working concept name to Groww FirstStep, updated brand and demo disclosures, and renamed Explore/Portfolio navigation to Discover/Practice. `npm run build` and `npm test` pass after the refresh. Mobile browser screenshot verified new brand and navigation layout; full desktop and keyboard review remain outstanding. | Partial |
+| Local learner profile | Let a learner choose a display name, optionally share a broad age band, or continue as a guest | Added as a seven-step onboarding flow; profile is stored only in localStorage and explicitly described as not secure authentication/no cloud sync. Browser interaction and refresh persistence checks are pending. | Not run |
 
 Automated test result: **1 test file passed, 6 tests passed** (`npm test`). Production build: **passed** (`npm run build`).
 

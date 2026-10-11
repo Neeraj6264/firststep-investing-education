@@ -7,3 +7,5 @@ The user-provided master prompt is the complete text in the attachment `Pasted t
 ## Follow-up prompt
 
 The user requested that the app feel more related to Groww’s visual style and that the interface names be adjusted to match. The implementation uses the working name “Groww FirstStep” for this independent concept, with green fintech styling and labels such as Discover and Practice. It remains clearly marked unofficial and does not use Groww’s logo or proprietary screens.
+
+The user then requested a small authentication flow that asks age. The agreed implementation direction is a local learner profile with optional broad age band, a guest path, and clear disclosure that this prototype does not provide secure authentication or cloud sync.

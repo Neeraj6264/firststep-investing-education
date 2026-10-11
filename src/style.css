@@ -38,3 +38,6 @@ body{background:#f6f9f7}
 
 @media(max-width:760px){.mobile-nav button{width:16.6667%}}
 
+
+.name-field{display:grid;gap:8px;color:#59625a;font-size:10px;font-weight:700}.name-field input{height:43px;border:1px solid #e1e6e0;border-radius:8px;background:#fff;padding:0 12px;font:500 12px 'DM Sans',sans-serif;color:#28342c}.name-field input:focus{border-color:#00a878;outline:3px solid #bde8d6;outline-offset:1px}
+

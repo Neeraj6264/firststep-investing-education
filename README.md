@@ -22,7 +22,9 @@ Open the local URL printed by Vite (normally `http://localhost:5173`). Build wit
 
 ## Data and limitations
 
-The `firststep.v1` localStorage key stores onboarding answers and progress, completed lessons, goals, watchlist, quiz score, virtual cash, holdings, and transaction history. Malformed JSON falls back to initial demo state. Data stays in this browser; clearing site storage removes it. “Clear all local Groww FirstStep data” removes this key.
+Onboarding offers a browser-only learner profile with a display name and optional broad age band. No exact birth date, email, password, or government identifier is collected. This is not secure authentication: it does not verify identity, protect a shared browser with a password, or sync across devices. Users can continue as a guest.
+
+The `firststep.v1` localStorage key stores the optional profile answers and other onboarding progress, completed lessons, goals, watchlist, quiz score, virtual cash, holdings, and transaction history. Malformed JSON falls back to initial demo state. Data stays in this browser; clearing site storage removes it. “Clear all local learner data” removes this key.
 
 All sample asset names, prices, movements, and charts are fictional and static. The virtual portfolio starts with ₹1,00,000, has no real transactions, and uses fixed demo prices consistently. Profit/loss compares current fictional prices with average virtual purchase cost. Goal monthly amounts divide remaining savings by whole months to the target date, without investment growth. The illustrative chart is not historical data. There is no account, backend, live market feed, tax treatment, fee model, or personalized advice.
 
