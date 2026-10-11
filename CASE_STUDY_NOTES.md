@@ -1,6 +1,6 @@
 # Case study: A calmer first step into investing
 
-> **Personalize before submitting.** The brief asks for this page not to be AI-created. This is an AI-assisted working draft based on the prototype, not a claim of unaided authorship or user research. Rewrite it in your own voice, add your real observations and decisions, and remove anything you cannot personally stand behind before submission.
+> **AI assistance disclosure.** This page was drafted with AI assistance. The candidate reports that the hiring contact allowed AI assistance. The product assumptions are stated openly; no primary user research is claimed.
 
 ## Problem and point of view
 

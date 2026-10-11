@@ -24,7 +24,7 @@ The optional learner profile asks for a display name and broad age range, or let
 
 ## Case-study deliverables
 
-- [Case-study draft and assumptions](CASE_STUDY_NOTES.md) — 300–700-word working draft. The brief asks that the submitted page not be AI-created; personalize and rewrite it in your own voice before submitting. Do not present this AI-assisted draft as unaided work or claim research you did not conduct.
+- [Case-study draft and assumptions](CASE_STUDY_NOTES.md) — 300–700-word AI-assisted draft with explicit assumptions and disclosure. The candidate reports that the hiring contact allowed AI assistance; no primary user research is claimed.
 - [Prompts used](PROMPTS.md)
 - [Evaluation record](EVALS.md)
 
