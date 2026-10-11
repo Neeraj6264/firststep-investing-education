@@ -63,4 +63,4 @@ All instruments, prices, price changes, and charts are fictional and static. The
 
 ## Deployment
 
-GitHub Pages deployment is configured in `.github/workflows/deploy.yml`. On pushes to `main`, GitHub Actions builds the app and publishes `dist/` to Pages. The repository Pages source is set to GitHub Actions. The live site is [neeraj6264.github.io/firststep-investing-education](https://neeraj6264.github.io/firststep-investing-education/); deployment status is visible in the repository’s [Actions](https://github.com/Neeraj6264/firststep-investing-education/actions) tab.
+GitHub Pages deployment is configured in `.github/workflows/deploy.yml`. On pushes to `main`, GitHub Actions builds the app and publishes `dist/` to Pages. Vite uses the repository subpath as its production base. The repository Pages source is set to GitHub Actions. The live site is [neeraj6264.github.io/firststep-investing-education](https://neeraj6264.github.io/firststep-investing-education/); deployment status is visible in the repository’s [Actions](https://github.com/Neeraj6264/firststep-investing-education/actions) tab.
